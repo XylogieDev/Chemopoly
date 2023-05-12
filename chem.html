@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Monopoly Feature</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1 class="title">Chemopoly: The Organic Adventure</h1>
+	<button onclick="showRandomChance()">Chance</button>
+	<button onclick="showRandomChest()">Community Chest</button>
+	<div id="output"></div>
+
+	<script>
+		var chanceCards = [
+			"Advance to Go (Collect Z$200)",
+			"Advance to Butene. If you pass Go, collect Z$200",
+			"Advance to Butyl Butyrate",
+			"Advance to Methanol. If you pass Go, collect Z$200",
+			"Advance to the nearest Equipment. If unowned, you may buy it from the Bank.",
+			"Bank pays you dividend of £Z$50",
+			"Get Out of Inhibitor Zone Free",
+			"Go Back 3 Spaces",
+			"Go to Inhibitor Zone. Go directly to Jail, do not pass Go, do not collect Z$200",
+			"Speeding fine Z$15",
+			"You have been elected Chairman of the Board. Pay each player Z$50",
+			"Your chemical compound stabilizes. Collect Z$150"
+		];
+
+		var chestCards = [
+			"Advance to Go (Collect Z$200)",
+			"Carbon emissions tax. Pay Z$75",
+			"From sale of laboratory equipment, you get Z$50",
+			"Get Out of Inhibitor Zone Free",
+			"Go to Inhibitor Zone. Lose your next turn and pay Z$50 fine to the bank",
+			"Your chemical formula wins the Nobel Prize. Collect Z$100",
+			"Receive Z$50 grant for scientific research",
+			"It is your discovery anniversary. Collect Z$20 from every player",
+			"Your patent has expired. Collect Z$25 from every player",
+			"Pay laboratory safety fine of Z$100",
+			"Pay environmental fine of Z$50",
+			"Receive Z$25 for publishing a scientific paper",
+			"You have won second prize in a scientific conference. Collect Z$10",
+			"Your grant proposal is approved. Collect Z$150"
+		];
+
+		function showRandomChance() {
+			var randomIndex = Math.floor(Math.random() * chanceCards.length);
+			var output = document.getElementById("output");
+			output.innerHTML = chanceCards[randomIndex];
+		}
+
+		function showRandomChest() {
+			var randomIndex = Math.floor(Math.random() * chestCards.length);
+			var output = document.getElementById("output");
+			output.innerHTML = chestCards[randomIndex];
+		}
+	</script>
+</body>
+</html>

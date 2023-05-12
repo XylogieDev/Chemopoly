@@ -1,0 +1,48 @@
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  #output {
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+    min-height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+    overflow: auto;
+    white-space: pre-wrap;
+    display: block;
+    text-align: center;
+  }
+  
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: monospace;
+
+  }
+  
